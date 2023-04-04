@@ -10,7 +10,7 @@ outputs:
     description: 'Square of the input' # need to specify the extra 'value' field for 'composite' actions
     value : ${{ steps.get-square.outputs.num_squared }}
 runs:
-  using : 'OSSpy'
+  using : 'reposite'
   steps:
     - name : Install Python
       uses : action/setup-python@v4
